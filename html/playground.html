@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>David's Environment</title>
+    <link href="/images/logos/favicon-32x32.png" rel="icon">
+    <style></style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <!--Put links to github and linkedin-->
+        <a href="/index.html">david;</a> |
+        <a href="/html/experience.html">experience</a> |
+        <a href="/html/playground.html">playground</a> |
+        <a href="/html/about.html">about</a>
+        <button type="button">Resume</button>
+        <button type="button">Let's connect!</button>
+      </nav>
+      <script></script>
+    </header>
+
+    <main>
+      
+      <h1>This is a playground for prototyping, demos, and/or labs</h1>
+      <hr>
+      <section class="homework" id="2">
+        <h2>Homework 2, all 63 tags:</h2>
+        <h3>h3 tag</h3>
+        <p>p tag</p>
+        <aside>
+          <h4><span>placeholder</span></h4>
+        </aside>
+        <b>b tag</b>
+        <i>i tag</i>
+        <strong>strong tag</strong>
+        <em>em tag</em>
+        <code>code tag?</code>
+        <pre>what is    pre      sf</pre>
+        <br>
+        <picture>
+          <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+          <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+          <img src="/images/logos/favicon-32x32.png" alt="Flowers">
+        </picture>
+        <iframe src="https://www.google.com" title="google"></iframe>
+        <audio controls>
+          <source src="horse.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+        <video width="320" height="240" controls>
+          <source src="movie.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <canvas id="myCanvas">
+          Your browser does not support the canvas tag.
+        </canvas>
+          
+        <script>
+          var canvas = document.getElementById("myCanvas");
+          var ctx = canvas.getContext("2d");
+          ctx.fillStyle = "#343443";
+          ctx.fillRect(0, 80, 80, 80);
+        </script>
+        
+        <svg viewBox="0 0 50 50" preserveAspectRatio="xMidYMid slice" role="img">
+          <title>A gradient</title>
+          <linearGradient id="gradient">
+            <stop class="begin" offset="0%" />
+            <stop class="end" offset="100%" />
+          </linearGradient>
+          <rect x="0" y="0" width="20" height="20" style="fill:url(#gradient)" />
+          <circle cx="50" cy="20" r="30" style="fill:url(#gradient)" />
+        </svg>
+        <ol>
+          <li>list</li>
+        </ol>
+        <label for="language">Choose a language:</label>
+        <select  name="language" id="language">
+          <optgroup label="Low level">
+            <option value="C">C</option>
+            <option value="x86">x86</option>
+          </optgroup>
+          <optgroup label="High level">
+            <option value="python">Python</option>
+            <option value="javascript">Javascript</option>
+          </optgroup>
+        </select>
+
+        <form action="/html/about.html" method="get">
+          <fieldset>
+            <label for="first">First name:</label>
+            <input type="text" id="first" name="first"><br><br>
+            <input type="submit" value="Submit">
+          </fieldset>
+        </form>
+
+        <textarea>hello textarea</textarea>
+
+        <label for="langs">Choose a lang:</label>
+        <input list="langs" id="langs" name="langs">
+        <datalist id="langs">
+          <option value="C">
+          <option value="Python">
+          <option value="Javascript">
+          <option value="Haskell">
+      </datalist>
+        
+      <details>
+        <summary>This homework</summary>
+        <p>
+          This was great love it!
+        </p>
+      </details>
+
+      <template>
+        <h2>Flower</h2>
+        <img src="/images/logos/favicon-32x32.png" width="214" height="204">
+      </template>
+
+      <table>
+        <caption>caption</caption>
+        <colgroup>
+          <col span="2" style="background-color:red">
+          <col style="background-color:yellow">
+        </colgroup>
+        <tr>
+          <th>a</th>
+          <th>b</th>
+          <th>c</th>
+        </tr>
+        <tr>
+          <td>d</td>
+          <td>e</td>
+          <td>f</td>
+        </tr>
+        <tr>
+          <td>g</td>
+          <td>h</td>
+          <td>i</td>
+        </tr>
+      </table>
+      <figure>
+        <img src="/images/logos/favicon-32x32.png" alt="nothing" style="width:100%">
+        <figcaption>a dragon hopefully</figcaption>
+      </figure>
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        <h2>General</h2>
+        <ul>
+          <li><a href="/index.html">home</a></li>
+          <li><a href="/html/experience.html">experience</a></li>
+          <li><a href="/html/playground.html">playground</a></li>
+          <li><a href="/html/about.html">about</a></li>
+        </ul>
+        
+        <h2>Contacts</h2>
+        <ul>
+          <li><a href="https://github.com/david00">github</a></li>
+          <li><a href="https://www.linkedin.com/in/david-em-yinn/">linkedin</a></li>
+          <li>email</li>
+        </ul>
+      </nav>
+      <label><a href="/index.html">em-yinn;</a></label>
+    </footer>
+  </body>
+</html>
