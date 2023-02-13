@@ -118,10 +118,11 @@ body {
 }
 
 /* Main */
-main {
+.main {
   display: flex;
   min-height: 100vh;
   min-width: 80vw;
+  padding-bottom: 2em;
 }
 
 #main-content {
@@ -139,6 +140,16 @@ main {
   /* background-color: #FBE7C4; */
   display: flex;
   z-index: 1;
+
+  /* height: 50px;
+  background-color: #ddd;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.5s ease-in-out;
+  transform: translateY(100%); */
+
   /* text-align: center; */
 }
 
