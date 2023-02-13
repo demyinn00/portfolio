@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <title>David's Environment</title>
-    <link href="/images/logos/favicon-32x32.png" rel="icon">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>David's Environment</title> 
+  <link href="/images/logos/favicon-32x32.png" rel="icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Lora:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/main.css"> 
+</head>
 
   <body>
-    <header>
-      <nav>
+    <header class="header">
+      <label>
+        <a href="/index.html">david;</a>
+      </label>
+      <nav class="header-nav">
         <!--Put links to github and linkedin-->
-        <a href="/index.html">david;</a> |
-        <a href="/html/experience.html">experience</a> |
-        <a href="/html/playground.html">playground</a> |
-        <a href="/html/about.html">about</a>
-        <button type="button">Resume</button>
-        <button type="button">Let's connect!</button>
+        <ul class="header-nav-list">
+          <li><a href="/html/experience.html">experience</a></li>
+          <li><a href="/html/playground.html">playground</a></li>
+          <li><a href="/html/about.html">about</a></li>
+          <li><button type="button" id="resume-btn">Resume</button></li>          
+          <li><button type="button" id="connect-btn">Let's connect!</button></li>
+        </ul>
       </nav>
-      <script></script>
     </header>
-
     <main>
       
       <h1>This is a playground for prototyping, demos, and/or labs</h1>
@@ -149,22 +155,26 @@
       </section>
     </main>
 
-    <footer>
-      <nav>
-        <h2>General</h2>
-        <ul>
-          <li><a href="/index.html">home</a></li>
-          <li><a href="/html/experience.html">experience</a></li>
-          <li><a href="/html/playground.html">playground</a></li>
-          <li><a href="/html/about.html">about</a></li>
-        </ul>
-        
-        <h2>Contacts</h2>
-        <ul>
-          <li><a href="https://github.com/david00">github</a></li>
-          <li><a href="https://www.linkedin.com/in/david-em-yinn/">linkedin</a></li>
-          <li>email</li>
-        </ul>
+    <footer class="footer">
+      <nav class="footer-nav">
+        <section>
+          <h1>General</h1>
+          <ul class="footer-nav-list">
+            <li><a href="/index.html">home</a></li>
+            <li><a href="/html/experience.html">experience</a></li>
+            <li><a href="/html/playground.html">playground</a></li>
+            <li><a href="/html/about.html">about</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>Contacts</h1>
+          <ul class="footer-nav-list">
+            <li><a href="https://github.com/david00">github</a></li>
+            <li><a href="https://www.linkedin.com/in/david-em-yinn/">linkedin</a></li>
+            <li>email</li>
+          </ul>
+        </section>
       </nav>
       <label><a href="/index.html">em-yinn;</a></label>
     </footer>

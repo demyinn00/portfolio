@@ -1,31 +1,150 @@
+/**
+* font color: #7A5F48
+*/
+
 * {
-  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* a {
+  text-decoration: none;
+  color: #7A736D;
+} */
+
+a {
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #7A5F48;
+  color: #7A5F48;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+a:hover {
+  box-shadow: inset 12rem 0 0 0 #7A5F48;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
 }
 
 body {
   border: 2px solid red;
-  padding: 0;
+
+  font-family: 'Lato', sans-serif;
+  color: #7A5F48;
+  background-color: #FFFFFF;
+}
+
+/* Header */
+.header {
+  border: 10px solid green;
+
+  background-color: #FBECDF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;;
+
+  padding: 10px;
+  /* margin: 0; */
+}
+
+.header label {
+  border: 3px solid black;
+  
+  font-size: 3em;
+  flex-grow: 1;
+  flex-shrink: 1;
+
   margin: 0;
 }
 
-.header {
-  border: 2px dotted green;
-  /* position: relative; */
-  margin-block-start: 20px;
-}
-
-/* .header nav {
+.header-nav {
+  border: 3px dotted purple;
+  
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  /* gap: 10px; */
   flex-grow: 1;
-} */
-
-.left-sidebar {
-  width: 20%;
-  background-color: lightgray;
+  flex-shrink: 1;
 }
 
-.right-sidebar {
-  width: 20%;
-  background-color: lightgray;
+.header-nav-list {
+  border: 3px solid red;
+  display: flex;
+  text-align: end;
+  flex-grow: 1;
+  flex-shrink: 1;
+  /* justify-content: flex-end; */
+}
+
+.header-nav-list li {
+  border: 2px dotted brown;
+  
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+/* Main */
+main {
+  display: flex;
+  min-height: 100vh;
+}
+
+#main-content {
+  border: 4px solid seagreen;
+  min-width: 80vw;
+}
+
+.left-sidebar, .right-sidebar {
+  min-width: 10vw;
+}
+
+/* Footer */
+.footer {
+  border: 5px dotted orange;
+
+  background-color: #FBE7C4;
+  display: flex;
+  /* text-align: center; */
+}
+
+.footer label {
+  border: 3px solid black;
+  
+  font-size: 3em;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.footer-nav {
+  border: 3px solid blue;
+
+  font-family: 'Noto Sans';
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.footer-nav section h1 {
+  font-weight: bold;
+  font-family: 'Lora';
+  text-align: center;
+
+}
+
+.footer-nav-list {
+  border: 3px dotted purple;
+  display: flex;
+  justify-content: space-evenly;
 }
