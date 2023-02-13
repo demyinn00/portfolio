@@ -1,5 +1,6 @@
 /**
 * font color: #7A5F48
+  background color; #FBECDF
 */
 
 * {
@@ -14,14 +15,14 @@
 
 a {
   text-decoration: none;
-  box-shadow: inset 0 0 0 0 #7A5F48;
-  color: #7A5F48;
+  box-shadow: inset 0 0 0 0 #0b3f47;
+  color: #0b3f47;
   margin: 0 -.25rem;
   padding: 0 .25rem;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 a:hover {
-  box-shadow: inset 12rem 0 0 0 #7A5F48;
+  box-shadow: inset 12rem 0 0 0 #0b3f47;
   color: white;
 }
 
@@ -33,24 +34,50 @@ body {
   border: 2px solid red;
 
   font-family: 'Lato', sans-serif;
-  color: #7A5F48;
-  background-color: #FFFFFF;
+  color: #0b3f47;
+  background-color: #ffffff;
 }
 
 /* Header */
 .header {
-  border: 10px solid green;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  float: left; */
+  /* border: 10px solid green; */
 
-  background-color: #FBECDF;
+  /* background-color: #FFE096; */
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   flex-grow: 1;
-  flex-shrink: 1;;
+  flex-shrink: 1;
+
+  animation: bounce 1s ease-in-out;
 
   padding: 10px;
   /* margin: 0; */
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  70% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 .header label {
@@ -64,8 +91,8 @@ body {
 }
 
 .header-nav {
-  border: 3px dotted purple;
-  
+  /* border: 3px dotted purple; */
+  font-size: 1.25rem;
   display: flex;
   flex-wrap: wrap;
   /* justify-content: space-around; */
@@ -75,7 +102,7 @@ body {
 }
 
 .header-nav-list {
-  border: 3px solid red;
+  /* border: 3px solid red; */
   display: flex;
   text-align: end;
   flex-grow: 1;
@@ -94,10 +121,11 @@ body {
 main {
   display: flex;
   min-height: 100vh;
+  min-width: 80vw;
 }
 
 #main-content {
-  border: 4px solid seagreen;
+  /* border: 4px solid seagreen; */
   min-width: 80vw;
 }
 
@@ -107,15 +135,15 @@ main {
 
 /* Footer */
 .footer {
-  border: 5px dotted orange;
-
-  background-color: #FBE7C4;
+  border: 3px solid black;
+  /* background-color: #FBE7C4; */
   display: flex;
+  z-index: 1;
   /* text-align: center; */
 }
 
 .footer label {
-  border: 3px solid black;
+  /* border: 3px solid black; */
   
   font-size: 3em;
   margin: 0;
@@ -125,10 +153,9 @@ main {
 }
 
 .footer-nav {
-  border: 3px solid blue;
-
+  /* border: 3px solid blue; */
   font-family: 'Noto Sans';
-
+  font-size: 1.25rem;
   display: flex;
   justify-content: space-evenly;
   flex-grow: 1;

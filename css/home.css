@@ -1,0 +1,49 @@
+#main-content {
+  /* background-color: #FFE096; */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  float: left; */
+  border: 3px dotted darkblue;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 80vw;
+  word-wrap: break-word;
+  flex-grow: 1;
+}
+
+#main-content h1 {
+  font-size: 4rem;
+  display: flex;
+  margin-bottom: 0.5em;
+}
+
+#subtitle {
+  border: 2px dotted pink;
+
+  font-size: 2.5rem;
+  display: flex;
+  white-space: nowrap;
+}
+
+#description {
+  font-size: 1.5rem;
+}
+
+.main-animate {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 
+.left-sidebar, .right-sidebar {
+  background-color: #FFE096;
+} */
