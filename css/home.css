@@ -19,7 +19,7 @@
 }
 
 #subtitle {
-  border: 2px dotted pink;
+  /* border: 2px dotted pink; */
 
   font-size: 2.5rem;
   display: flex;
