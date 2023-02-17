@@ -1,57 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <title>David's Environment</title>
-    <link href="/images/logos/favicon-32x32.png" rel="icon">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>David's Environment</title> 
+  <link rel="icon" href="/assets/icons/brand_logos/site_logo_lighten.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Lora:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/main.css"> 
+  <link rel="stylesheet" type="text/css" href="/css/home.css"> 
+</head>
 
   <body>
-    <header>
-      <nav>
+    <header class="header">
+      <label>
+        <a href="/index.html">david;</a>
+      </label>
+      <nav class="header-nav">
         <!--Put links to github and linkedin-->
-        <a href="/index.html">david;</a> |
-        <a href="/html/experience.html">experience</a> |
-        <a href="/html/playground.html">playground</a> |
-        <a href="/html/about.html">about</a>
-        <button type="button">Resume</button>
-        <button type="button">Let's connect!</button>
+        <ul class="header-nav-list">
+          <li><a href="/html/experience.html">experience</a></li>
+          <li><a href="/html/playground.html">playground</a></li>
+          <li><a href="/html/about.html">about</a></li>
+          <li><button type="button" id="resume-btn">Resume</button></li>          
+          <li><button type="button" id="connect-btn">Let's connect!</button></li>
+        </ul>
       </nav>
     </header>
 
-    <main>
-      <h1>My experiences</h1>
-      <hr>
-      <section id="work-experience">
-        <h2>Where I've worked...</h2>
+    <main class="main">
+      <aside class="left-sidebar"></aside>
+      <div id="main-content">
+        <section id="work-experience">
+          <h1>Where I've worked...</h1>
+          <article class="main-article" id="article-1">
+            <h2>Software Engineer Intern @ Roku</h2>
+            <h3>Jun 2022 - Sep 2022</h3>
+            <ul class="ul-experience">
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+            </ul>
+          </article>
 
-      </section>
+          <article class="main-article" id="article-2">
+            <h2>Software Engineer Intern @ Epsilon</h2>
+            <h3>Jun 2021 - Aug 2021</h3>
+            <ul class="ul-experience">
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+            </ul>
+          </article>
+        </section>
 
-      <section id="project-experience">
-        <h2>What I've worked on...</h2>
+        <section id="project-experience">
+          <h1>What I've worked on...</h1>
+          <article class="main-article" id="article-3">
+            <h2>Software Engineer Intern @ Roku</h2>
+            <h3>Jun 2022 - Sep 2022</h3>
+            <ul class="ul-experience">
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+            </ul>
+          </article>
 
-      </section>
+          <article class="main-article" id="article-4">
+            <h2>Software Engineer Intern @ Roku</h2>
+            <h3>Jun 2022 - Sep 2022</h3>
+            <ul class="ul-experience">
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+            </ul>
+          </article>
+
+          <article class="main-article" id="article-5">
+            <h2>Software Engineer Intern @ Roku</h2>
+            <h3>Jun 2022 - Sep 2022</h3>
+            <ul class="ul-experience">
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+            </ul>
+          </article>
+        </section>
+      </div>
+      <aside class="right-sidebar"></aside>
     </main>
 
-    <footer>
-      <nav>
-        <h2>General</h2>
-        <ul>
+    <footer class="footer">
+      <div id="footer-content">
+        <h1>demyinn</h1>
+        <p>
+          demyinn is a portfolio website to showcase my project and work experieneces. Thanks for stopping by! Check out the links down below
+        </p>
+      </div>
+      <nav class="footer-nav">
+        <ul class="footer-nav-list">
           <li><a href="/index.html">home</a></li>
           <li><a href="/html/experience.html">experience</a></li>
           <li><a href="/html/playground.html">playground</a></li>
           <li><a href="/html/about.html">about</a></li>
         </ul>
-        
-        <h2>Contacts</h2>
-        <ul>
-          <li><a href="https://github.com/david00">github</a></li>
+
+        <ul class="footer-nav-list">
+          <li>
+            <a href="https://github.com/demyinn00">github</a>
+          </li>
           <li><a href="https://www.linkedin.com/in/david-em-yinn/">linkedin</a></li>
-          <li>email</li>
+          <li><a href="mailto:david.emyinn@gmail.com">email</a></li>
         </ul>
       </nav>
       <label><a href="/index.html">em-yinn;</a></label>
-    </footer>
+    </footer> 
   </body>
 </html>
+
+
+
