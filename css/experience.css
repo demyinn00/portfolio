@@ -6,8 +6,22 @@
   /* padding-top: 2rem */
 }
 
+#main-content {
+  /* background-color: #FFE096; */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  float: left; */
+  /* border: 3px dotted darkblue; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 80vw;
+  word-wrap: break-word;
+  flex-grow: 1;
+}
+
 #main-content section {
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   padding-bottom: 1em;
   padding-top: 1em;
 }
@@ -19,7 +33,7 @@
 }
 
 .main-article {
-  border: 4px dotted cyan;
+  /* border: 4px dotted cyan; */
 }
 
 .main-article h2 {
