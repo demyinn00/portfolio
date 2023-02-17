@@ -8,10 +8,9 @@
   padding: 0;
 }
 
-/* a {
-  text-decoration: none;
-  color: #7A736D;
-} */
+html {
+  height: 100%;
+}
 
 a {
   text-decoration: none;
@@ -31,7 +30,9 @@ ul {
 }
 
 body {
-  border: 2px solid red;
+  /* border: 2px solid red; */
+
+  min-height: 100%;
 
   font-family: 'Lato', sans-serif;
   color: #0b3f47;
@@ -41,11 +42,7 @@ body {
 /* Header */
 .header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  float: left; */
-  /* border: 10px solid green; */
 
-  /* background-color: #FFE096; */
   position: sticky;
   top: 0;
   left: 0;
@@ -81,7 +78,7 @@ body {
 }
 
 .header label {
-  border: 3px solid black;
+  /* border: 3px solid black; */
   
   font-size: 3em;
   flex-grow: 1;
@@ -95,8 +92,6 @@ body {
   font-size: 1.25rem;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-around; */
-  /* gap: 10px; */
   flex-grow: 1;
   flex-shrink: 1;
 }
@@ -107,11 +102,10 @@ body {
   text-align: end;
   flex-grow: 1;
   flex-shrink: 1;
-  /* justify-content: flex-end; */
 }
 
 .header-nav-list li {
-  border: 2px dotted brown;
+  /* border: 2px dotted brown; */
   
   flex-grow: 1;
   flex-shrink: 1;
@@ -136,31 +130,25 @@ body {
 
 /* Footer */
 .footer {
-  border: 3px solid black;
+  /* border: 3px solid black; */
   /* background-color: #FBE7C4; */
   display: flex;
   z-index: 1;
-
-  /* height: 50px;
-  background-color: #ddd;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: transform 0.5s ease-in-out;
-  transform: translateY(100%); */
-
-  /* text-align: center; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  min-height: 150px;
+  transition: background-color 0.2s ease-in-out;
 }
 
-.footer label {
-  /* border: 3px solid black; */
-  
-  font-size: 3em;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+.footer:hover {
+  /* 7abfcb */
+  background-color: #7abfcb;
+}
+
+#footer-content {
+  text-align: center;
 }
 
 .footer-nav {
@@ -169,20 +157,23 @@ body {
   font-size: 1.25rem;
   display: flex;
   justify-content: space-evenly;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   gap: 10px;
-  flex-direction: column;
 }
 
-.footer-nav section h1 {
-  font-weight: bold;
-  font-family: 'Lora';
-  text-align: center;
-
+.footer label {
+  /* border: 3px solid black; */
+  
+  font-size: 3em;
+  bottom: 0;
+  right: 0;
+  position: absolute;
 }
 
-.footer-nav-list {
+
+
+/* .footer-nav-list {
   border: 3px dotted purple;
   display: flex;
   justify-content: space-evenly;
-}
+} */
