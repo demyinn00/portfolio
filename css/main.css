@@ -20,6 +20,7 @@ a {
   padding: 0 .25rem;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
+
 a:hover {
   box-shadow: inset 12rem 0 0 0 #0b3f47;
   color: white;
@@ -36,7 +37,7 @@ body {
 
   font-family: 'Lato', sans-serif;
   color: #0b3f47;
-  background-color: #ffffff;
+  background-color: #f1eeee;
 }
 
 /* Header */

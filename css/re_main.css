@@ -1,12 +1,162 @@
+/* general */
 :root {
   --primary-color: #0b3f47;
+  --secondary-color: #ffffff;
   font-family: 'Open Sans';
+  line-height: 1.5;
 }
 
 html {
+  font-size: 100%;
+}
 
+body {
+  min-height: 100%;
+  max-width: 100%;
+
+  background-color: var(--secondary-color);
+  color: var(--primary-color)
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 var(--primary-color);
+  color: #0b3f47;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+ul {
+  list-style-type: none;
 }
 
 p {
   font-family: 'Bitter', sans-serif;
+}
+
+/* header */ 
+
+header {
+  display: flex;
+  /* justify-content: end; */
+  align-items: center;
+  text-align: end;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-size: 1.2rem;
+  padding: 1.2em;
+
+  /* nav bar effects */
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #ffffff;
+
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  animation: bounce 1s ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  75% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0%);
+  } 
+}
+
+.nav-logo:hover {
+  animation: zoom 0.5s forwards;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  } 
+  to {
+    transform: scale(1.25);
+  }
+}
+
+.nav {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.nav-list {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: space-around;
+
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a:hover{
+  box-shadow: inset 12rem 0 0 0 var(--primary-color);
+  color: #ffffff;
+}
+
+/* main */
+
+main {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: minmax(12%, auto) 1fr minmax(12%, auto);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+#left-sidebar {
+  grid-column: 1;
+  grid-row: 1 / span 5;
+}
+
+#right-sidebar {
+  grid-column: 3;
+  grid-row: 1 / span 5;
+}
+
+.main-content {
+  grid-column: 2;
+}
+
+#landing {
+  grid-row: 1;
+}
+
+#about {
+  grid-row: 2;
+}
+
+#experience {
+  grid-row: 3;
+}
+
+#projects {
+  grid-row: 4;
+}
+
+#contact {
+  grid-row: 5;
 }
