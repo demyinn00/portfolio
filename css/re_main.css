@@ -24,6 +24,8 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 a {
@@ -119,7 +121,7 @@ header {
   color: #ffffff;
 }
 
-/* main */
+/****************** main *********************/
 
 main {
   display: grid;
@@ -142,13 +144,107 @@ main {
   grid-column: 2;
 }
 
+/* landing */
+
 #landing {
   grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
+
+#landing h1,
+#landing-subtitle,
+#landing-description {
+  opacity: 0;
+}
+
+#landing h1 {
+  margin: 5rem 25rem 0 0;
+  font-size: 4rem;
+
+  animation: slideIn 1s ease-in-out forwards;
+}
+
+#landing-subtitle {
+  font-size: 2.5rem;
+  margin: 0rem 35rem 0 0;
+  font-style: italic;
+
+  animation: slideIn 1.2s ease-in-out forwards;
+  animation-delay: 0.35s;
+}
+
+#landing-description {
+  margin: 0.5rem 1rem;
+  font-size: 1.5rem;
+
+  animation: slideIn 1s ease-in-out forwards;
+  animation-delay: 0.7s;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* about */
 
 #about {
   grid-row: 2;
 }
+
+#about h1 {
+  font-size: 3rem;
+
+  opacity: 0;
+  animation: fancyFadeIn 1s ease forwards;
+}
+
+#about-ppf {
+  margin: 0.5rem 0rem;
+  font-size: 1.75rem;
+
+  opacity: 0;
+  animation: fancyFadeIn 1s ease forwards;
+  animation-delay: 0.45s;
+}
+
+.ppf-content {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+
+  opacity: 0;
+  animation: fancyFadeIn 1s ease forwards;
+  animation-delay: 0.8s;
+}
+
+
+.fade-in {
+  opacity: 0;
+  color: var(--primary-color);
+  animation: fancyFadeIn 1s ease forwards;
+}
+
+@keyframes fancyFadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(-9rem, -4rem, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* experience and projects */
 
 #experience {
   grid-row: 3;
@@ -158,6 +254,36 @@ main {
   grid-row: 4;
 }
 
+#experience h1, #projects h1 {
+  font-size: 3rem;
+}
+
+#experience h2, #projects h2 {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+#experience h3, #projects h3 {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.experience-ul {
+  list-style-type: disc;
+}
+
+/* contact */
+
 #contact {
   grid-row: 5;
+}
+
+#contact-socials {
+  border: 3px solid black;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
