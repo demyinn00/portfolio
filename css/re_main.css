@@ -49,6 +49,10 @@ button {
   font-family: 'Open Sans';
 }
 
+section:not(#landing) h1 {
+  font-size: 3rem;
+}
+
 /* header */ 
 
 header {
@@ -223,8 +227,6 @@ main {
 }
 
 #about h1 {
-  font-size: 3rem;
-
   opacity: 0;
   animation: fancyFadeIn 1s ease forwards;
 }
@@ -273,10 +275,6 @@ main {
 
 #projects {
   grid-row: 4;
-}
-
-#experience h1, #projects h1 {
-  font-size: 3rem;
 }
 
 #experience h2, #projects h2 {
