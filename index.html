@@ -3,48 +3,170 @@
 
   <head>
     <meta charset="utf-8">
-    <title>David's Environment</title> 
-    <link rel="icon" href="/assets/icons/brand_logos/site_logo_lighten.svg">
+    <title>David's Porfolio</title> 
+    <link rel="icon" href="/assets/icons/brand_logos/site_icon_lighten.svg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Lora:wght@500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/css/main.css"> 
-    <link rel="stylesheet" type="text/css" href="/css/home.css"> 
+
+    <!-- Import fonts: Open Sans, Bitter, Lato -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;600&family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Lora:wght@500;600&display=swap" rel="stylesheet"> -->
+    
+    <link rel="stylesheet" type="text/css" href="/css/re_main.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="/css/main.css"> 
+    <link rel="stylesheet" type="text/css" href="/css/home.css">  -->
   </head>
 
   <body>
     <header class="header">
-      <label>
-        <a href="/index.html">david;</a>
-      </label>
-      <nav class="header-nav">
+      <a class="nav-logo" href="index.html">
+        <img src="/assets/icons/brand_logos/site_logo_passthrough.svg">
+      </a>
+
+      <nav class="nav">
         <!--Put links to github and linkedin-->
-        <ul class="header-nav-list">
-          <li><a href="/html/experience.html">experience</a></li>
+        <ul class="nav-list">
+          <li><a href="#about">about</a></li>
+          <li><a href="#experience">experience</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#contact">contact</a></li>
           <li><a href="/html/playground.html">playground</a></li>
-          <li><a href="/html/about.html">about</a></li>
-          <li><button type="button" id="resume-btn">Resume</button></li>          
-          <li><button type="button" id="connect-btn">Let's connect!</button></li>
+          <!-- <li><button type="button" id="resume-btn">Resume</button></li>           -->
         </ul>
+
+        <button type="button" id="resume-btn"><a href="https://drive.google.com/file/d/1yp5JFesNp0_GBV5zFo6QBCoKTIbOCjWj/view?usp=share_link" target="_blank">Resume</a></button>
       </nav>
     </header>
 
-    <main class="main">
-      <aside class="left-sidebar"></aside>
-      <div id="main-content">
-        <h1 class="main-animate">Hi, my name is David.</h1>
-        <p class="main-animate" id="subtitle">I like to learn. </p>
-        <p class="main-animate" id="description">Welcome to my website! I'm a graduating senior with a passion for software engineering
+    <main>
+      
+      <aside id="left-sidebar"></aside>
+
+      <section class="main-content" id="landing">
+        <h1>Hi, my name is David.</h1>
+        <p id="landing-subtitle">I like to learn. </p>
+        <p id="landing-description">Welcome to my portfolio website! I'm a graduating senior with a passion for software engineering
           and a strong desire grow this field. My goal is to build quality, and 
           effective applications to tackle real-world challenges. I am eager to dive deep into
           new technologies and continue learning!
         </p>
-      </div>
-      <aside class="right-sidebar"></aside>
+      </section>
+
+      <section class="main-content" id="about">
+        <h1>Hey, it's David!</h1>
+        <p id="about-ppf">Past, Present, Future!</p>
+        <p class="ppf-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+          laboris nisi ut aliquip ex ea commodo consequat. 
+        </p>
+
+        <p class="ppf-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        </p>
+
+        <p class="ppf-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+        </p>
+      </section>
+
+      <section class="main-content" id="experience">
+        <h1>Where I've worked!</h1>
+        <article class="experience-article">
+          <h2>Software Engineer Intern @ Roku</h2>
+          <h3>Jun 2022 - Sep 2022</h3>
+          <ul class="experience-ul">
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+          </ul>
+        </article>
+
+        <article class="experience-article">
+          <h2>Python Developer Intern @ Epsilon</h2>
+          <h3>Jun 2021 - Aug 2021</h3>
+          <ul class="experience-ul">
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-content" id="projects">
+        <h1>What I've worked on...</h1>
+          <article class="projects-article">
+            <h2>Software Engineer Intern @ Roku</h2>
+            <h3>Jun 2022 - Sep 2022</h3>
+            <ul class="experience-ul">
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+            </ul>
+          </article>
+
+          <article class="projects-article">
+            <h2>Software Engineer Intern @ Roku</h2>
+            <h3>Jun 2022 - Sep 2022</h3>
+            <ul class="experience-ul">
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+            </ul>
+          </article>
+
+          <article class="main-article">
+            <h2>Software Engineer Intern @ Roku</h2>
+            <h3>Jun 2022 - Sep 2022</h3>
+            <ul class="experience-ul">
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore</li>
+            </ul>
+          </article>
+        </section>
+        
+      <section class="main-content" id="contact">
+        <h1>Let's connect!</h1>
+        <p>I would love to chat and answer any of your questions!</p>
+        <button type="button" id="contact-btn"><a href="mailto:david.emyinn@gmail.com">Say hi!</a></button>
+        <div id="contact-socials">
+          <a href="https://github.com/demyinn00" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/david-em-yinn/" target="_blank">linkedin</a>
+        </div>
+      </section>
+
+      <aside id="right-sidebar"></aside>
     </main>
 
-    <footer class="footer">
+    <!-- Using single html file -->
+    <!--  
+    <footer>
       <div id="footer-content">
         <h1>demyinn</h1>
         <p>
@@ -52,14 +174,14 @@
         </p>
       </div>
       <nav class="footer-nav">
-        <ul class="footer-nav-list">
+        <ul class="nav-list">
           <li><a href="/index.html">home</a></li>
           <li><a href="/html/experience.html">experience</a></li>
           <li><a href="/html/playground.html">playground</a></li>
           <li><a href="/html/about.html">about</a></li>
         </ul>
 
-        <ul class="footer-nav-list">
+        <ul class="nav-list">
           <li>
             <a href="https://github.com/demyinn00">github</a>
           </li>
@@ -69,5 +191,6 @@
       </nav>
       <label><a href="/index.html">em-yinn;</a></label>
     </footer> 
+  -->
   </body>
 </html>
