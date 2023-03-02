@@ -42,6 +42,35 @@ function addPost(callback) {
   dialog.setAttribute('open', true);
 }
 
+function updatePost(intIndex) {
+  const post = posts[intIndex];
+  const postTemplate = document.querySelector('#post-template');
+  const postClone = postTemplate.content.cloneNode(true);
+  const dialog = postClone.querySelector('#dialog');
+
+  const postHeader = postClone.querySelector('#post-header');
+  postHeader.innerText = 'Update post';
+  const postTitle = postClone.querySelector('#post-title');
+  postTitle.value = post.title;
+  const postSummary = postClone.querySelector('#post-summary');
+  postSummary.value = post.summary;
+  const cancelBtn = postClone.querySelector('#cancel-btn');
+  const okBtn = postClone.querySelector('#ok-btn');
+
+  okBtn.addEventListener('click', () => {
+    document.body.removeChild(dialog);
+    post.title = postTitle.value;
+    post.summary = postSummary.value;
+    listPosts();
+  });
+
+  cancelBtn.addEventListener('click', () => {
+    document.body.removeChild(dialog);
+  });
+  document.body.appendChild(dialog);
+  dialog.setAttribute('open', true);
+}
+
 function deletePost(intIndex) {
   posts.splice(intIndex, 1);
   listPosts();
@@ -56,11 +85,20 @@ function listPosts() {
         <h2>${posts[i].title}</h2>
         <p>${posts[i].summary}</p>
         <p>${posts[i].date}</p>
+        <button class="update-btn">update</button>
         <button class="delete-btn">delete</button>
       </li>
     `;
   }
   document.querySelector('#list-posts').innerHTML = list;
+
+  const updateBtns = document.querySelectorAll('.update-btn');
+  updateBtns.forEach((btn, i) => {
+    btn.addEventListener('click', () => {
+      updatePost(i);
+    });
+  });
+
   const deleteBtns = document.querySelectorAll('.delete-btn');
   deleteBtns.forEach((btn, i) => {
     btn.addEventListener('click', () => {
