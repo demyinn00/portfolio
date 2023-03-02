@@ -1,16 +1,4 @@
-/* <template id="post-template">
-    <dialog id="dialog">
-      <h1>New Post!</h1>
-      <label for="post-title">Post Title:</label>
-      <input id="post-title" type="text">
-      <label for="post-summary">Post Summary:</label>
-      <input id="post-summary" type="text">
-      <button id="cancel-btn">Cancel</button>
-      <button id="ok-btn">Ok</button>
-    </dialog>
-  </template> */
-
-let posts = []; // JSON.parse(localStorage.getItem("post-list")) || [];
+let posts =  JSON.parse(localStorage.getItem("post-list")) || [];
 
 function addPost(callback) {
   const postTemplate = document.querySelector('#post-template');
@@ -29,7 +17,10 @@ function addPost(callback) {
       summary: postSummary.value,
       date: new Date().toLocaleDateString("en-US")
     };
+
     posts.push(post);
+    
+    localStorage.setItem("post-list", JSON.stringify(posts));
     listPosts();
     console.log(post);
   });
@@ -61,6 +52,7 @@ function updatePost(intIndex) {
     document.body.removeChild(dialog);
     post.title = postTitle.value;
     post.summary = postSummary.value;
+    localStorage.setItem("post-list", JSON.stringify(posts));
     listPosts();
   });
 
@@ -73,6 +65,7 @@ function updatePost(intIndex) {
 
 function deletePost(intIndex) {
   posts.splice(intIndex, 1);
+  localStorage.setItem("post-list", JSON.stringify(posts));
   listPosts();
 }
 
@@ -107,4 +100,4 @@ function listPosts() {
   });
 }
 
-export { addPost, deletePost, listPosts };
+export { addPost, deletePost, listPosts, posts };
