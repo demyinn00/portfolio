@@ -78,8 +78,8 @@ function listPosts() {
         <h2>${posts[i].title}</h2>
         <p>${posts[i].summary}</p>
         <p>${posts[i].date}</p>
-        <button class="update-btn">update</button>
-        <button class="delete-btn">delete</button>
+        <button class="update-btn"><i class="fas fa-pencil-alt"></i> Update</button>
+        <button class="delete-btn"><i class="fas fa-trash"></i> Delete</button>
       </li>
     `;
   }
