@@ -1,6 +1,10 @@
+// All the posts 
 let posts =  JSON.parse(localStorage.getItem("post-list")) || [];
 
-function addPost(callback) {
+/**
+ * addPost is a function that will allow the user to add a new post
+ */
+function addPost() {
   const postTemplate = document.querySelector('#post-template');
   const postClone = postTemplate.content.cloneNode(true);
   const dialog = postClone.querySelector('#dialog');
@@ -27,12 +31,16 @@ function addPost(callback) {
 
   cancelBtn.addEventListener('click', () => {
     document.body.removeChild(dialog);
-    // callback(`User clicked cancel`);
   });
+
   document.body.appendChild(dialog);
   dialog.setAttribute('open', true);
 }
 
+/**
+ * updatePost is a function that allows the user to update their post
+ * @param {int} intIndex 
+ */
 function updatePost(intIndex) {
   const post = posts[intIndex];
   const postTemplate = document.querySelector('#post-template');
@@ -63,12 +71,19 @@ function updatePost(intIndex) {
   dialog.setAttribute('open', true);
 }
 
+/**
+ * deletePost is a function that will delete a post
+ * @param {int} intIndex 
+ */
 function deletePost(intIndex) {
   posts.splice(intIndex, 1);
   localStorage.setItem("post-list", JSON.stringify(posts));
   listPosts();
 }
 
+/**
+ * listPosts is a function that will list and display all the posts
+ */
 function listPosts() {
   let list = '';
   console.log(`from list posts: ${posts}`)

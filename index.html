@@ -12,15 +12,8 @@
     <!-- Import fonts: Open Sans, Bitter, Lato -->
 
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;600&family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-
-
-    
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Lora:wght@500;600&display=swap" rel="stylesheet"> -->
-    
-    <link rel="stylesheet" type="text/css" href="/css/re_main.css">
-
-    <!-- <link rel="stylesheet" type="text/css" href="/css/main.css"> 
-    <link rel="stylesheet" type="text/css" href="/css/home.css">  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
   </head>
 
   <body>
@@ -30,7 +23,6 @@
       </a>
 
       <nav class="nav">
-        <!--Put links to github and linkedin-->
         <ul class="nav-list">
           <li><a href="#about">about</a></li>
           <li><a href="#experience">experience</a></li>
@@ -39,7 +31,7 @@
           <li><a href="/html/nativedialogs.html">native dialogs</a></li>
           <li><a href="/html/customdialog.html">custom dialogs</a></li>
           <li><a href="/html/crud.html">crud</a></li>
-          <!-- <li><button type="button" id="resume-btn">Resume</button></li>           -->
+          <li><a href="/html/styledcrud.html">styledcrud</a></li>
         </ul>
 
         <button type="button" id="resume-btn"><a href="https://drive.google.com/file/d/1yp5JFesNp0_GBV5zFo6QBCoKTIbOCjWj/view?usp=share_link" target="_blank">Resume</a></button>
@@ -158,41 +150,23 @@
         <p>I would love to chat and answer any of your questions!</p>
         <button type="button" id="contact-btn"><a href="mailto:david.emyinn@gmail.com">Say hi!</a></button>
         <div id="contact-socials">
-          <a href="https://github.com/demyinn00" target="_blank">github</a>
-          <a href="https://www.linkedin.com/in/david-em-yinn/" target="_blank">linkedin</a>
+          <!-- <a href="https://github.com/demyinn00" target="_blank">
+            <i class="fab fa-github"></i>
+          </a> -->
+          <a href="https://github.com/demyinn00" target="_blank">
+            <i class="fab fa-github fa-2x" aria-label="Github"></i>
+          </a>
+          <!-- <a href="https://www.linkedin.com/in/david-em-yinn/" target="_blank">linkedin</a> -->
+          <a href="https://www.linkedin.com/in/david-em-yinn/" target="_blank">
+            <i class="fab fa-linkedin fa-2x" aria-label="LinkedIn"></i>
+          </a>
         </div>
       </section>
 
       <aside id="right-sidebar"></aside>
     </main>
 
-    <!-- Using single html file -->
-    <!--  
-    <footer>
-      <div id="footer-content">
-        <h1>demyinn</h1>
-        <p>
-          demyinn is a portfolio website to showcase my project and work experieneces. Thanks for stopping by! Check out the links down below
-        </p>
-      </div>
-      <nav class="footer-nav">
-        <ul class="nav-list">
-          <li><a href="/index.html">home</a></li>
-          <li><a href="/html/experience.html">experience</a></li>
-          <li><a href="/html/playground.html">playground</a></li>
-          <li><a href="/html/about.html">about</a></li>
-        </ul>
-
-        <ul class="nav-list">
-          <li>
-            <a href="https://github.com/demyinn00">github</a>
-          </li>
-          <li><a href="https://www.linkedin.com/in/david-em-yinn/">linkedin</a></li>
-          <li><a href="mailto:david.emyinn@gmail.com">email</a></li>
-        </ul>
-      </nav>
-      <label><a href="/index.html">em-yinn;</a></label>
-    </footer> 
-  -->
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+    <script type="module" src="/js/main.js"></script>
   </body>
 </html>
