@@ -18,7 +18,7 @@ body {
   color: var(--primary-color)
 }
 
-section {
+/* section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,15 @@ section {
   align-items: center;
   flex-grow: 1;
   flex-shrink: 1;
+} */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: left;  /* keeps items horizontally centered */
+  justify-content: flex-start; /* aligns items to the start of the section vertically */
+  margin-bottom: 25vh;
 }
+
 
 a {
   text-decoration: none;
@@ -148,12 +156,20 @@ button:hover a {
 
 /****************** main *********************/
 
-main {
+/* main {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: minmax(12%, auto) 1fr minmax(12%, auto);
   grid-template-rows: repeat(5, 1fr);
+} */
+
+main {
+  display: grid;
+  /* gap: 1.5rem; */
+  grid-template-columns: minmax(12%, auto) 1fr minmax(12%, auto);
+  grid-template-rows: auto; /* changed from repeat(5, 1fr) to auto */
 }
+
 
 #left-sidebar {
   grid-column: 1;
@@ -294,6 +310,10 @@ main {
 }
 
 /* contact */
+
+section#contact{
+  align-items: center;
+}
 
 #contact {
   grid-row: 5;
