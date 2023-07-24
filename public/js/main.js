@@ -1,3 +1,13 @@
+console.log("Hello! Thanks for checking out my site and going deeper with the dev tools." + 
+            " There are a quite a bit on the backlog. " + 
+            "This site was last updated on 07/23/2023. I'm currently working" + 
+            " on implementing AOS and adapative (or responsive) design.");
+
+console.log("For now, feel free to explore my site and if you have any feedback, please email me!");
+
+console.log("Some things I would like to highlight is that I worked on making my HTML as semantic as possible; but" + 
+            " I know I misused the <h*> tags. That is something on my backlog...")
+
 const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 700,
   speedAsDuration: true,
